@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-foreground font-semibold tracking-tight;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-casino-600 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-casino-500;
+  }
+}
+
+@layer components {
+  .prose-casino {
+    @apply text-muted-foreground leading-relaxed;
+  }
+  .prose-casino h2 {
+    @apply text-xl font-semibold text-foreground mt-10 mb-4 pb-2 border-b border-border;
+  }
+  .prose-casino h3 {
+    @apply text-lg font-semibold text-foreground mt-8 mb-3;
+  }
+  .prose-casino p {
+    @apply mb-4 text-muted-foreground;
+  }
+  .prose-casino ul, .prose-casino ol {
+    @apply mb-4 pl-6 space-y-2;
+  }
+  .prose-casino li {
+    @apply text-muted-foreground;
+  }
+  .prose-casino li::marker {
+    @apply text-primary;
+  }
+  .prose-casino strong {
+    @apply text-foreground font-medium;
+  }
+  .prose-casino a {
+    @apply text-primary hover:text-primary/80 underline underline-offset-4 transition-colors;
+  }
+  .prose-casino img {
+    @apply rounded-lg my-6 w-full;
+  }
+  .prose-casino blockquote {
+    @apply border-l-2 border-primary pl-4 italic text-muted-foreground my-6;
+  }
+  .prose-casino table {
+    @apply w-full my-6 border-collapse;
+  }
+  .prose-casino th {
+    @apply bg-muted text-primary px-4 py-3 text-left text-sm font-medium;
+  }
+  .prose-casino td {
+    @apply border-t border-border px-4 py-3 text-muted-foreground;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-primary text-primary-foreground font-medium rounded-md
+           hover:bg-primary/90
+           transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3
+           border border-border text-foreground font-medium rounded-md
+           hover:bg-accent hover:text-accent-foreground
+           transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-secondary text-secondary-foreground font-medium rounded-md
+           hover:bg-secondary/80
+           transition-colors duration-200;
+  }
+
+  .card {
+    @apply bg-card border border-border rounded-lg;
+  }
+}
+
+@layer utilities {
+  .text-accent-gold {
+    @apply text-primary;
+  }
+}
