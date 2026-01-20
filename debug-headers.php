@@ -1,0 +1,8 @@
+<?php
+echo json_encode([
+    'HTTPS' => $_SERVER['HTTPS'] ?? 'NOT SET',
+    'HTTP_X_FORWARDED_PROTO' => $_SERVER['HTTP_X_FORWARDED_PROTO'] ?? 'NOT SET',
+    'HTTP_HOST' => $_SERVER['HTTP_HOST'] ?? 'NOT SET',
+    'SERVER_PORT' => $_SERVER['SERVER_PORT'] ?? 'NOT SET',
+    'REQUEST_SCHEME' => $_SERVER['REQUEST_SCHEME'] ?? 'NOT SET',
+], JSON_PRETTY_PRINT);
