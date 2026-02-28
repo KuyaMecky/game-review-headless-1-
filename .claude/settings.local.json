@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx next build:*)",
+      "Bash(npx next dev)",
+      "Bash(curl:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\Mecky\\\\Downloads\\\\review-platform-enterprise\\\\app\"\" 2>/dev/null || echo \"Using alternative approach \")",
+      "Bash(npx next dev -p 3000)",
+      "Bash(npx next dev:*)",
+      "Bash(for user in \"pagcorcasino\" \"admin\" \"pagcor\" \"Pagcor_Casino\" \"pagcor_casino\")",
+      "Bash(do echo -n \"Testing ''$user'': \")",
+      "Bash(done)",
+      "Bash(node -e:*)",
+      "Bash(node create-casinos.js:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(ssh:*)",
+      "Bash(scp:*)",
+      "Bash(ssh-keygen:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm install)",
+      "WebFetch(domain:www.pagcor.ph)",
+      "Bash(dir:*)",
+      "Bash(ping:*)",
+      "Bash(gh auth status:*)",
+      "Bash(where gh)",
+      "Bash(git remote add:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git add:*)",
+      "Bash(git update-ref:*)",
+      "Bash(git reflog expire:*)",
+      "Bash(git gc:*)",
+      "Bash(bash:*)"
+    ]
+  }
+}
